@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* ─── Tailwind v4 theme ─────────────────────────────────────────── */
+@theme {
+  /* Background colors */
+  --color-bg-primary: #0b0e11;
+  --color-bg-secondary: #12161b;
+  --color-bg-elevated: #1a1f26;
+
+  /* Border */
+  --color-border-subtle: #262c34;
+  --color-divider: rgba(244, 241, 235, 0.08);
+
+  /* Text */
+  --color-text-primary: #f4f1eb;
+  --color-text-secondary: #a6adb8;
+  --color-text-muted: #6b7280;
+
+  /* Accent colors */
+  --color-accent-bright: #f2b84b;
+  --color-accent-secondary: #4ade9c;
+  --color-accent-alert: #e8654a;
+
+  /* Typography — maps to font-fraunces, font-manrope, font-mono utility classes */
+  --font-fraunces: var(--nf-fraunces), Georgia, serif;
+  --font-manrope: var(--nf-manrope), system-ui, sans-serif;
+  --font-mono: var(--nf-mono), "Courier New", monospace;
+}
+
+/* ─── CSS custom properties (raw, for inline CSS usage) ─────────── */
+:root {
+  --bg-primary: #0b0e11;
+  --bg-secondary: #12161b;
+  --bg-elevated: #1a1f26;
+  --border-subtle: #262c34;
+  --text-primary: #f4f1eb;
+  --text-secondary: #a6adb8;
+  --text-muted: #6b7280;
+  --accent-bright: #f2b84b;
+  --accent-secondary: #4ade9c;
+  --accent-alert: #e8654a;
+  --divider-line: rgba(244, 241, 235, 0.08);
+}
+
+/* ─── Base Resets ──────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ─── Selection ────────────────────────────────────────────────── */
+::selection {
+  background: rgba(242, 184, 75, 0.25);
+  color: var(--text-primary);
+}
+
+/* ─── Focus Visible ────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
