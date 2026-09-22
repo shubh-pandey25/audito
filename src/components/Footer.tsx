@@ -41,13 +41,25 @@ export default function Footer() {
 
           {/* Right — contact/legal */}
           <div className="flex flex-col gap-2 items-start md:items-end">
-            <a
-              href="mailto:hello@auditflow.co.in"
-              className="font-manrope text-xs text-text-muted hover:text-text-secondary transition-colors duration-200"
-            >
-              hello@auditflow.co.in
-            </a>
-            <p className="font-mono text-xs text-text-muted">
+            <div className="flex flex-col gap-1 items-start md:items-end">
+              <span className="font-mono text-[11px] uppercase tracking-wider text-accent-bright">Direct Contact</span>
+              <a
+                href="mailto:shubhpandey.0408@gmail.com"
+                className="font-manrope text-xs text-text-secondary hover:text-accent-bright transition-colors duration-200"
+              >
+                shubhpandey.0408@gmail.com
+              </a>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-manrope text-xs text-text-muted">
+                <a href="tel:+919319515024" className="hover:text-text-secondary transition-colors">
+                  +91 9319515024
+                </a>
+                <span>•</span>
+                <a href="tel:+919997649922" className="hover:text-text-secondary transition-colors">
+                  +91 9997649922
+                </a>
+              </div>
+            </div>
+            <p className="font-mono text-[11px] text-text-muted mt-2">
               © {currentYear} Auditflow. All rights reserved.
             </p>
           </div>

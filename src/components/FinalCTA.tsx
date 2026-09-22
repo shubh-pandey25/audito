@@ -103,6 +103,32 @@ export default function FinalCTA() {
                 </div>
               ))}
             </div>
+
+            <div className="mt-2 pt-6 border-t border-border-subtle/60 flex flex-col gap-2">
+              <span className="font-mono text-xs text-accent-bright uppercase tracking-wider">
+                Or Reach Us Directly
+              </span>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-manrope text-sm text-text-secondary">
+                <a
+                  href="mailto:shubhpandey.0408@gmail.com"
+                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
+                >
+                  <span className="text-accent-bright">✉</span> shubhpandey.0408@gmail.com
+                </a>
+                <a
+                  href="tel:+919319515024"
+                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
+                >
+                  <span className="text-accent-bright">📞</span> +91 9319515024
+                </a>
+                <a
+                  href="tel:+919997649922"
+                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
+                >
+                  <span className="text-accent-bright">📞</span> +91 9997649922
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
