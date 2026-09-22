@@ -10,28 +10,30 @@ const steps = [
     description:
       "Automatically analyze the company's industry, financial performance, and risk landscape. No manual research briefings needed.",
     visual: (
-      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs">
-        <div className="flex justify-between text-text-muted border-b border-border-subtle/50 pb-1.5">
-          <span>Financial Ratio</span>
-          <span>Value</span>
-          <span>Benchmark</span>
-          <span>Flag</span>
-        </div>
-        {[
-          { label: "Current Ratio", val: "0.82", bench: ">1.5", flag: true },
-          { label: "Debt/Equity", val: "3.4×", bench: "<2.0×", flag: true },
-          { label: "EBITDA Margin", val: "18.2%", bench: ">15%", flag: false },
-          { label: "Revenue Growth", val: "-4.1%", bench: ">0%", flag: true },
-        ].map((row) => (
-          <div key={row.label} className="flex justify-between items-center gap-2">
-            <span className="text-text-secondary flex-1 truncate">{row.label}</span>
-            <span className="text-text-primary w-14 text-right">{row.val}</span>
-            <span className="text-text-muted w-14 text-right">{row.bench}</span>
-            <span className={`w-10 text-right ${row.flag ? "text-accent-alert" : "text-accent-secondary"}`}>
-              {row.flag ? "⚠" : "✓"}
-            </span>
+      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs overflow-x-auto">
+        <div className="min-w-[320px]">
+          <div className="flex justify-between text-text-muted border-b border-border-subtle/50 pb-1.5">
+            <span>Financial Ratio</span>
+            <span>Value</span>
+            <span>Benchmark</span>
+            <span>Flag</span>
           </div>
-        ))}
+          {[
+            { label: "Current Ratio", val: "0.82", bench: ">1.5", flag: true },
+            { label: "Debt/Equity", val: "3.4×", bench: "<2.0×", flag: true },
+            { label: "EBITDA Margin", val: "18.2%", bench: ">15%", flag: false },
+            { label: "Revenue Growth", val: "-4.1%", bench: ">0%", flag: true },
+          ].map((row) => (
+            <div key={row.label} className="flex justify-between items-center gap-2">
+              <span className="text-text-secondary flex-1 truncate">{row.label}</span>
+              <span className="text-text-primary w-14 text-right">{row.val}</span>
+              <span className="text-text-muted w-14 text-right">{row.bench}</span>
+              <span className={`w-10 text-right ${row.flag ? "text-accent-alert" : "text-accent-secondary"}`}>
+                {row.flag ? "⚠" : "✓"}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     ),
   },
@@ -41,7 +43,8 @@ const steps = [
     description:
       "Get a risk-ranked audit plan built from the analysis, ready for the team to review, adjust, and formally approve.",
     visual: (
-      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-1.5 font-mono text-xs">
+      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-1.5 font-mono text-xs overflow-x-auto">
+        <div className="min-w-[320px]">
         <div className="text-text-muted pb-1 border-b border-border-subtle/50">Risk-Ranked Audit Plan</div>
         {[
           { area: "Revenue Recognition", score: 94, bar: "w-11/12" },
@@ -57,7 +60,9 @@ const steps = [
             </div>
             <span className="text-accent-bright w-8 text-right">{item.score}</span>
           </div>
+          </div>
         ))}
+        </div>
       </div>
     ),
   },
@@ -67,7 +72,8 @@ const steps = [
     description:
       "Documents are automatically processed and controls tested against expected criteria. Only real exceptions surface to a human.",
     visual: (
-      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs">
+      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs overflow-x-auto">
+        <div className="min-w-[320px]">
         <div className="text-text-muted pb-1 border-b border-border-subtle/50">Control Testing — Automated</div>
         {[
           { doc: "Invoice_2847.pdf", test: "3-way match", result: "Pass" },
@@ -93,6 +99,7 @@ const steps = [
         <div className="pt-1 border-t border-border-subtle/50 text-text-muted">
           848 tested · <span className="text-accent-alert">1 exception</span> · 0 manual hours
         </div>
+        </div>
       </div>
     ),
   },
@@ -102,7 +109,8 @@ const steps = [
     description:
       "Findings are auto-drafted into a ready-to-edit report. Fixes are automatically tracked and re-verified over time.",
     visual: (
-      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs">
+      <div className="bg-bg-primary border border-border-subtle rounded p-3 space-y-2 font-mono text-xs overflow-x-auto">
+        <div className="min-w-[340px]">
         <div className="text-text-muted pb-1 border-b border-border-subtle/50">Finding Tracker</div>
         {[
           { id: "F-001", finding: "Missing authorization", owner: "CFO", status: "Resolved", color: "secondary" },
@@ -128,6 +136,7 @@ const steps = [
         ))}
         <div className="pt-1 border-t border-border-subtle/50 flex items-center gap-2 text-text-muted">
           <span>Auto-reminder sent to IT · 3 days overdue</span>
+        </div>
         </div>
       </div>
     ),

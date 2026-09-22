@@ -79,7 +79,8 @@ export default function Problem() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             aria-hidden="true"
           >
-            <div className="bg-bg-elevated border border-border-subtle rounded-lg overflow-hidden opacity-60">
+            <div className="bg-bg-elevated border border-border-subtle rounded-lg overflow-x-auto opacity-60">
+              <div className="min-w-[600px]">
               {/* Fake spreadsheet toolbar */}
               <div className="flex items-center gap-2 px-3 py-2 bg-bg-secondary border-b border-border-subtle">
                 <span className="font-mono text-xs text-text-muted">Audit_Workpaper_Q3_FINAL_v4.xlsx</span>
@@ -125,6 +126,7 @@ export default function Problem() {
                 <span className="font-mono text-xs text-text-muted/40 italic">
                   # TODO: add to tracker · confirm samples with manager · resend email to client
                 </span>
+              </div>
               </div>
             </div>
 
