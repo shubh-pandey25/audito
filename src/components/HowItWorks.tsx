@@ -60,7 +60,6 @@ const steps = [
             </div>
             <span className="text-accent-bright w-8 text-right">{item.score}</span>
           </div>
-          </div>
         ))}
         </div>
       </div>
