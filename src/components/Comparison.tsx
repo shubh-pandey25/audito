@@ -83,20 +83,21 @@ export default function Comparison() {
 
         {/* Table */}
         <motion.div
-          className="border border-border-subtle rounded-lg overflow-hidden"
+          className="border border-border-subtle rounded-lg overflow-x-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
-          {/* Table header */}
+          <div className="min-w-[768px]">
+            {/* Table header */}
           <div className="grid grid-cols-12 bg-bg-secondary border-b border-border-subtle">
             <div className="col-span-3 px-5 py-3 border-r border-border-subtle">
               <span className="font-mono text-xs text-text-muted uppercase tracking-wider">
                 Aspect
               </span>
             </div>
-            <div className="col-span-4 px-5 py-3 border-r border-border-subtle flex items-center gap-2">
-              <span className="font-mono text-xs text-text-muted uppercase tracking-wider">
+            <div className="col-span-4 px-5 py-3 border-r border-border-subtle flex items-center gap-2 bg-red-500/5">
+              <span className="font-mono text-xs text-text-secondary uppercase tracking-wider">
                 Traditional Audit
               </span>
             </div>
@@ -120,9 +121,9 @@ export default function Comparison() {
                   {row.aspect}
                 </span>
               </div>
-              <div className="col-span-4 px-5 py-4 border-r border-border-subtle flex items-start gap-2.5">
-                <span className="font-mono text-xs text-text-muted mt-0.5 shrink-0">✕</span>
-                <span className="font-manrope text-xs text-text-muted leading-relaxed">
+              <div className="col-span-4 px-5 py-4 border-r border-border-subtle flex items-start gap-2.5 bg-red-500/5">
+                <span className="font-mono text-xs text-red-400/80 mt-0.5 shrink-0">✕</span>
+                <span className="font-manrope text-xs text-text-secondary leading-relaxed">
                   {row.traditional}
                 </span>
               </div>
@@ -134,6 +135,7 @@ export default function Comparison() {
               </div>
             </div>
           ))}
+          </div>
         </motion.div>
       </div>
     </section>

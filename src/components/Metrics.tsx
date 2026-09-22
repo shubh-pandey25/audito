@@ -17,7 +17,7 @@ const stats = [
     accent: false,
   },
   {
-    value: "~80%",
+    value: "~55%",
     label: "Fewer manual hours",
     sub: "on testing and reporting tasks",
     accent: false,
