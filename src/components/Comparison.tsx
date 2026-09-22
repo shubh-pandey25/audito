@@ -102,7 +102,7 @@ export default function Comparison() {
             </div>
             <div className="col-span-5 px-5 py-3 flex items-center gap-2">
               <span className="font-mono text-xs text-accent-bright uppercase tracking-wider">
-                audito.ai
+                Audito Agent
               </span>
             </div>
           </div>

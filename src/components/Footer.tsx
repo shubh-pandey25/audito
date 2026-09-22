@@ -10,9 +10,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Left — brand */}
           <div className="flex flex-col gap-3 max-w-xs">
-            <a href="#" className="flex items-baseline gap-0.5" aria-label="Audito AI home">
-              <span className="font-fraunces text-lg italic text-text-primary">audito</span>
-              <span className="font-mono text-xs text-accent-bright">.ai</span>
+            <a href="#" className="flex items-baseline gap-0.5" aria-label="Auditflow home">
+              <span className="font-fraunces text-lg italic text-text-primary">auditflow</span>
             </a>
             <p className="font-manrope text-xs text-text-muted leading-relaxed">
               Audit intelligence software for internal audit teams, audit firms, and risk leaders.
@@ -43,13 +42,13 @@ export default function Footer() {
           {/* Right — contact/legal */}
           <div className="flex flex-col gap-2 items-start md:items-end">
             <a
-              href="mailto:hello@audito.ai"
+              href="mailto:hello@auditflow.co.in"
               className="font-manrope text-xs text-text-muted hover:text-text-secondary transition-colors duration-200"
             >
-              hello@audito.ai
+              hello@auditflow.co.in
             </a>
             <p className="font-mono text-xs text-text-muted">
-              © {currentYear} Audito AI. All rights reserved.
+              © {currentYear} Auditflow. All rights reserved.
             </p>
           </div>
         </div>

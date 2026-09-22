@@ -23,9 +23,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Audito AI — Internal Audit Intelligence Platform",
+  title: "Auditflow — Internal Audit Intelligence Platform",
   description:
-    "Audito AI automates document review, control testing, and audit reporting — so your audit team focuses on judgment, not busywork. Risk-based audit planning, full-population testing, and continuous follow-up tracking.",
+    "Auditflow's AI agent, Audito, automates document review, control testing, and audit reporting — so your audit team focuses on judgment, not busywork. Risk-based audit planning, full-population testing, and continuous follow-up tracking.",
   keywords: [
     "internal audit software",
     "audit automation",
@@ -35,15 +35,15 @@ export const metadata: Metadata = {
     "audit reporting",
   ],
   openGraph: {
-    title: "Audito AI — Internal Audit Intelligence Platform",
+    title: "Auditflow — Internal Audit Intelligence Platform",
     description:
       "Automate document review, control testing, and audit reporting. Spend time on judgment, not busywork.",
     type: "website",
-    siteName: "Audito AI",
+    siteName: "Auditflow",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Audito AI — Internal Audit Intelligence Platform",
+    title: "Auditflow — Internal Audit Intelligence Platform",
     description:
       "Automate document review, control testing, and audit reporting.",
   },

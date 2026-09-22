@@ -67,7 +67,7 @@ export default function Security() {
             </h2>
             <p className="font-manrope text-base text-text-secondary leading-relaxed">
               Audit engagements involve highly sensitive client data — financial records,
-              HR files, and strategic documents. Audito is built for this reality: security
+              HR files, and strategic documents. Auditflow and its AI agent, Audito, are built for this reality: security
               is not a feature layer, it is the foundation.
             </p>
             <p className="font-manrope text-sm text-text-muted leading-relaxed">
