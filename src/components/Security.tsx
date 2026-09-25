@@ -27,7 +27,7 @@ const pillars = [
     icon: FileCheck,
     title: "Audit Trail Integrity",
     description:
-      "Every action — document upload, test run, status change — is logged with timestamp and actor. Tamper-evident records.",
+      "Every action - document upload, test run, status change - is logged with timestamp and actor. Tamper-evident records.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function Security() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-16 items-start">
-          {/* Left — text */}
+          {/* Left - text */}
           <motion.div
             className="lg:col-span-2 flex flex-col gap-6"
             initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ export default function Security() {
               <span className="italic">data security.</span>
             </h2>
             <p className="font-manrope text-base text-text-secondary leading-relaxed">
-              Audit engagements involve highly sensitive client data — financial records,
+              Audit engagements involve highly sensitive client data - financial records,
               HR files, and strategic documents. AuditFlow and its AI agent, Audito, are built for this reality: security
               is not a feature layer, it is the foundation.
             </p>
@@ -83,7 +83,7 @@ export default function Security() {
             </a>
           </motion.div>
 
-          {/* Right — pillars grid */}
+          {/* Right - pillars grid */}
           <motion.div
             className="lg:col-span-3 grid sm:grid-cols-2 gap-px bg-border-subtle rounded-lg overflow-hidden border border-border-subtle"
             initial={{ opacity: 0, x: 20 }}

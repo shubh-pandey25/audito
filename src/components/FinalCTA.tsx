@@ -64,7 +64,7 @@ export default function FinalCTA() {
 
             <p className="font-manrope text-lg text-text-secondary leading-relaxed">
               See how AuditFlow and the Audito agent fit your team&apos;s existing workflow. We&apos;ll walk you through a
-              live example using a realistic audit scenario — no prepared demo script.
+              live example using a realistic audit scenario - no prepared demo script.
             </p>
 
             {!submitted ? (
@@ -122,7 +122,7 @@ export default function FinalCTA() {
               >
                 <span className="text-accent-secondary font-mono text-sm">✓</span>
                 <p className="font-manrope text-sm text-text-secondary">
-                  Thanks — we&apos;ll be in touch within one business day.
+                  Thanks - we&apos;ll be in touch within one business day.
                 </p>
               </motion.div>
             )}

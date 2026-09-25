@@ -14,7 +14,7 @@ const steps = [
         <p className="text-text-muted border-b border-border-subtle/50 pb-2">Financial Risk Scan</p>
         {[
           { label: "Current Ratio", val: "0.82", flag: true },
-          { label: "Debt / Equity", val: "3.4�-", flag: true },
+          { label: "Debt / Equity", val: "3.4×", flag: true },
           { label: "EBITDA Margin", val: "18.2%", flag: false },
           { label: "Revenue Growth", val: "−4.1%", flag: true },
         ].map((row) => (
@@ -62,7 +62,7 @@ const steps = [
       "Documents are automatically processed and controls tested against expected criteria. Only real exceptions surface to a human.",
     visual: (
       <div className="bg-bg-primary border border-border-subtle rounded-lg p-4 space-y-2 font-mono text-xs">
-        <p className="text-text-muted border-b border-border-subtle/50 pb-2">Control Testing — Auto</p>
+        <p className="text-text-muted border-b border-border-subtle/50 pb-2">Control Testing - Auto</p>
         {[
           { doc: "Invoice_2847.pdf", result: "Pass" },
           { doc: "Invoice_2848.pdf", result: "Pass" },
@@ -159,11 +159,11 @@ export default function HowItWorks() {
           >
             From raw data to{" "}
             <span className="italic">verified findings</span>
-            {" "}— automatically.
+            {" "}- automatically.
           </h2>
         </motion.div>
 
-        {/* Steps — single col mobile, 2-col md, 4-col xl */}
+        {/* Steps - single col mobile, 2-col md, 4-col xl */}
         <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-px lg:bg-border-subtle lg:rounded-lg lg:overflow-hidden lg:border lg:border-border-subtle">
           {steps.map((step, i) => (
             <motion.div

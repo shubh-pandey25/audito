@@ -55,7 +55,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left — editorial headline */}
+          {/* Left - editorial headline */}
           <motion.div
             className="flex flex-col gap-8"
             initial={{ opacity: 0, x: -30 }}
@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Subhead */}
             <p className="font-manrope text-lg text-text-secondary leading-relaxed max-w-md">
               An intelligence platform that automates document review, control testing, and
-              reporting — so your audit team spends its time on judgment, not busywork.
+              reporting - so your audit team spends its time on judgment, not busywork.
             </p>
 
             {/* CTAs */}
@@ -108,7 +108,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right — Risk Control Matrix mock UI */}
+          {/* Right - Risk Control Matrix mock UI */}
           <motion.div
             className="relative"
             initial={{ opacity: 0, x: 30 }}
