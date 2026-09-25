@@ -57,14 +57,14 @@ export default function FinalCTA() {
               id="cta-heading"
               className="font-fraunces text-4xl lg:text-6xl text-text-primary leading-[1.05] tracking-tight"
             >
-              Ready to audit
+              Ready to internal audit
               <br />
               <span className="italic">with precision?</span>
             </h2>
 
             <p className="font-manrope text-lg text-text-secondary leading-relaxed">
               See how AuditFlow and the Audito agent fit your team&apos;s existing workflow. We&apos;ll walk you through a
-              live example using a realistic audit scenario - no prepared demo script.
+              live example using a realistic internal audit scenario - no prepared demo script.
             </p>
 
             {!submitted ? (

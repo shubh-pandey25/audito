@@ -27,12 +27,12 @@ const features = [
     ),
   },
   {
-    title: "Risk-Based Audit Planning",
+    title: "Risk-Based Internal Audit Planning",
     description:
-      "Automatically prioritize which areas to audit based on actual risk signals — not guesswork, seniority, or last year's plan.",
+      "Automatically prioritize which areas to internal audit based on actual risk signals — not guesswork, seniority, or last year's plan.",
     dataElement: (
       <div className="mt-4 bg-bg-primary rounded border border-border-subtle p-3">
-        <div className="font-mono text-xs text-text-muted mb-2">Q3 Audit Calendar</div>
+        <div className="font-mono text-xs text-text-muted mb-2">Q3 Internal Audit Calendar</div>
         {[
           { month: "Oct", area: "Revenue Recognition", priority: "P1" },
           { month: "Nov", area: "IT Access Controls", priority: "P1" },
@@ -168,7 +168,7 @@ export default function FeatureGrid() {
             id="features-heading"
             className="font-fraunces text-4xl lg:text-5xl text-text-primary leading-[1.1] tracking-tight"
           >
-            Everything the audit
+            Everything the internal audit
             <br />
             needs. <span className="italic">Automated.</span>
           </h2>

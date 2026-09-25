@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const rows = [
   {
-    aspect: "Audit scope",
+    aspect: "Internal Audit scope",
     traditional: "Based on last year's plan or intuition",
     audito: "Risk-ranked from live financial and industry data",
   },
@@ -35,7 +35,7 @@ const rows = [
     audito: "Automated reminders and evidence-based re-verification",
   },
   {
-    aspect: "Audit coverage",
+    aspect: "Internal Audit coverage",
     traditional: "Limited by team capacity; selective sampling",
     audito: "100% population coverage on automated controls",
   },
@@ -75,7 +75,7 @@ export default function Comparison() {
             id="comparison-heading"
             className="font-fraunces text-4xl lg:text-5xl text-text-primary leading-[1.1] tracking-tight"
           >
-            The audit process,
+            The internal audit process,
             <br />
             <span className="italic">fundamentally rethought.</span>
           </h2>
@@ -98,7 +98,7 @@ export default function Comparison() {
             </div>
             <div className="col-span-4 px-5 py-3 border-r border-border-subtle flex items-center gap-2 bg-red-950/30">
               <span className="font-mono text-xs text-text-secondary uppercase tracking-wider">
-                Traditional Audit
+                Traditional Internal Audit
               </span>
             </div>
             <div className="col-span-5 px-5 py-3 flex items-center gap-2">

@@ -23,29 +23,29 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AuditFlow - Internal Audit Intelligence Platform",
+  title: "AuditFlow - Internal Internal Audit Intelligence Platform",
   description:
-    "AuditFlow's AI agent, Audito, automates document review, control testing, and audit reporting - so your audit team focuses on judgment, not busywork. Risk-based audit planning, full-population testing, and continuous follow-up tracking.",
+    "AuditFlow's AI agent, Audito, automates document review, control testing, and internal audit reporting - so your internal audit team focuses on judgment, not busywork. Risk-based internal audit planning, full-population testing, and continuous follow-up tracking.",
   keywords: [
-    "internal audit software",
-    "audit automation",
-    "audit intelligence",
-    "risk-based audit",
+    "internal internal audit software",
+    "internal audit automation",
+    "internal audit intelligence",
+    "risk-based internal audit",
     "control testing automation",
-    "audit reporting",
+    "internal audit reporting",
   ],
   openGraph: {
-    title: "AuditFlow - Internal Audit Intelligence Platform",
+    title: "AuditFlow - Internal Internal Audit Intelligence Platform",
     description:
-      "Automate document review, control testing, and audit reporting. Spend time on judgment, not busywork.",
+      "Automate document review, control testing, and internal audit reporting. Spend time on judgment, not busywork.",
     type: "website",
     siteName: "AuditFlow",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AuditFlow - Internal Audit Intelligence Platform",
+    title: "AuditFlow - Internal Internal Audit Intelligence Platform",
     description:
-      "Automate document review, control testing, and audit reporting.",
+      "Automate document review, control testing, and internal audit reporting.",
   },
 };
 

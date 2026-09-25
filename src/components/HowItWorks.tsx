@@ -33,10 +33,10 @@ const steps = [
     number: "02",
     title: "Plan",
     description:
-      "Get a risk-ranked audit plan built from the analysis, ready for the team to review, adjust, and formally approve.",
+      "Get a risk-ranked internal audit plan built from the analysis, ready for the team to review, adjust, and formally approve.",
     visual: (
       <div className="bg-bg-primary border border-border-subtle rounded-lg p-4 space-y-2.5 font-mono text-xs">
-        <p className="text-text-muted border-b border-border-subtle/50 pb-2">Risk-Ranked Audit Plan</p>
+        <p className="text-text-muted border-b border-border-subtle/50 pb-2">Risk-Ranked Internal Audit Plan</p>
         {[
           { area: "Revenue Recognition", score: 94, pct: "92%" },
           { area: "IT Access Controls",  score: 87, pct: "78%" },

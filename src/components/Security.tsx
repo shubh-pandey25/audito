@@ -9,7 +9,7 @@ const pillars = [
     icon: Lock,
     title: "End-to-End Encryption",
     description:
-      "All client data is encrypted in transit and at rest. Audit evidence never leaves your designated environment unencrypted.",
+      "All client data is encrypted in transit and at rest. Internal Audit evidence never leaves your designated environment unencrypted.",
   },
   {
     icon: Shield,
@@ -25,7 +25,7 @@ const pillars = [
   },
   {
     icon: FileCheck,
-    title: "Audit Trail Integrity",
+    title: "Internal Audit Trail Integrity",
     description:
       "Every action - document upload, test run, status change - is logged with timestamp and actor. Tamper-evident records.",
   },
@@ -61,12 +61,12 @@ export default function Security() {
               id="security-heading"
               className="font-fraunces text-4xl lg:text-5xl text-text-primary leading-[1.1] tracking-tight"
             >
-              Audit-grade
+              Internal Audit-grade
               <br />
               <span className="italic">data security.</span>
             </h2>
             <p className="font-manrope text-base text-text-secondary leading-relaxed">
-              Audit engagements involve highly sensitive client data - financial records,
+              Internal Audit engagements involve highly sensitive client data - financial records,
               HR files, and strategic documents. AuditFlow and its AI agent, Audito, are built for this reality: security
               is not a feature layer, it is the foundation.
             </p>

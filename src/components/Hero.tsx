@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="flex items-center gap-2">
               <div className="h-px w-8 bg-accent-bright" aria-hidden="true" />
               <span className="font-mono text-xs text-accent-bright uppercase tracking-widest">
-                Audit Intelligence Platform
+                Internal Audit Intelligence Platform
               </span>
             </div>
 
@@ -75,7 +75,7 @@ export default function Hero() {
               id="hero-heading"
               className="font-fraunces text-5xl lg:text-7xl text-text-primary leading-[1.05] tracking-tight"
             >
-              Audit less
+              Internal Audit less
               <br />
               paperwork.
               <br />
@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Subhead */}
             <p className="font-manrope text-lg text-text-secondary leading-relaxed max-w-md">
               An intelligence platform that automates document review, control testing, and
-              reporting - so your audit team spends its time on judgment, not busywork.
+              reporting - so your internal audit team spends its time on judgment, not busywork.
             </p>
 
             {/* CTAs */}
@@ -123,7 +123,7 @@ export default function Hero() {
                   <span className="font-mono text-xs text-text-muted">Risk Control Matrix</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-xs text-text-muted">FY2025 · Q3 Audit</span>
+                  <span className="font-mono text-xs text-text-muted">FY2025 · Q3 Internal Audit</span>
                   <div className="flex gap-1" aria-hidden="true">
                     {[0, 1, 2].map((i) => (
                       <div key={i} className="w-1.5 h-1.5 rounded-full bg-border-subtle" />

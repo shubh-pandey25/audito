@@ -43,7 +43,7 @@ export default function Problem() {
               id="problem-heading"
               className="font-fraunces text-4xl lg:text-5xl text-text-primary leading-[1.1] tracking-tight"
             >
-              Audit teams are
+              Internal Audit teams are
               <br />
               buried in the
               <br />
@@ -52,13 +52,13 @@ export default function Problem() {
 
             <div className="space-y-5 font-manrope text-base text-text-secondary leading-relaxed">
               <p>
-                Traditional audits mean weeks of manual document collection, spreadsheet-based
+                Traditional internal audits mean weeks of manual document collection, spreadsheet-based
                 sampling, and status-chasing over email. Entire engagements are spent on
                 logistics and data entry — not on the professional judgment that actually matters.
               </p>
               <p>
                 By the time findings are compiled and reports drafted, the business has already
-                moved on. And the next audit cycle starts exactly the same way.
+                moved on. And the next internal audit cycle starts exactly the same way.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export default function Problem() {
                 &ldquo;We spent more time chasing evidence than reviewing it.&rdquo;
               </p>
               <footer className="mt-2 font-mono text-xs text-text-muted">
-                — Chief Audit Executive, Fortune 500 company
+                — Chief Internal Audit Executive, Fortune 500 company
               </footer>
             </blockquote>
           </motion.div>

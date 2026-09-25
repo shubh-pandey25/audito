@@ -14,7 +14,7 @@ export default function Footer() {
               <img src="/banner.png" alt="AuditFlow" className="h-8 w-auto object-contain" />
             </a>
             <p className="font-manrope text-xs text-text-muted leading-relaxed">
-              Audit intelligence software for internal audit teams, audit firms, and risk leaders.
+              Internal Audit intelligence software for internal internal audit teams, internal audit firms, and risk leaders.
             </p>
           </div>
 
