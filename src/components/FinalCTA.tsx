@@ -8,11 +8,27 @@ export default function FinalCTA() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [submitted, setSubmitted] = useState(false);
-  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (email.trim()) setSubmitted(true);
+    setIsSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,27 +70,47 @@ export default function FinalCTA() {
             {!submitted ? (
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-col sm:flex-row gap-3"
+                className="flex flex-col gap-4 max-w-md"
                 aria-label="Request a demo form"
               >
-                <label htmlFor="demo-email" className="sr-only">
-                  Your work email
-                </label>
+                <input type="hidden" name="access_key" value="34bdc554-16a4-4673-a7ad-f44a01c08969" />
+                
                 <input
-                  id="demo-email"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 bg-bg-elevated border border-border-subtle rounded font-manrope text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-bright transition-colors duration-200"
+                />
+                <input
+                  name="organization"
+                  type="text"
+                  required
+                  placeholder="Organization Name"
+                  className="w-full px-4 py-3 bg-bg-elevated border border-border-subtle rounded font-manrope text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-bright transition-colors duration-200"
+                />
+                <input
+                  name="email"
                   type="email"
                   required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@firm.com"
-                  className="flex-1 px-4 py-3 bg-bg-elevated border border-border-subtle rounded font-manrope text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-bright transition-colors duration-200"
+                  className="w-full px-4 py-3 bg-bg-elevated border border-border-subtle rounded font-manrope text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-bright transition-colors duration-200"
                 />
+                <input
+                  name="phone"
+                  type="tel"
+                  required
+                  placeholder="Mobile Number"
+                  className="w-full px-4 py-3 bg-bg-elevated border border-border-subtle rounded font-manrope text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-bright transition-colors duration-200"
+                />
+
                 <button
                   type="submit"
                   id="cta-submit"
-                  className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium font-manrope bg-accent-bright text-bg-primary rounded hover:bg-amber-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-bright focus:ring-offset-2 focus:ring-offset-bg-primary whitespace-nowrap"
+                  disabled={isSubmitting}
+                  className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 text-sm font-medium font-manrope bg-accent-bright text-bg-primary rounded hover:bg-amber-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-bright focus:ring-offset-2 focus:ring-offset-bg-primary whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Request a Demo
+                  {isSubmitting ? "Submitting..." : "Request a Demo"}
                 </button>
               </form>
             ) : (
@@ -104,31 +140,6 @@ export default function FinalCTA() {
               ))}
             </div>
 
-            <div className="mt-2 pt-6 border-t border-border-subtle/60 flex flex-col gap-2">
-              <span className="font-mono text-xs text-accent-bright uppercase tracking-wider">
-                Or Reach Us Directly
-              </span>
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-manrope text-sm text-text-secondary">
-                <a
-                  href="mailto:shubhpandey.0408@gmail.com"
-                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
-                >
-                  <span className="text-accent-bright">✉</span> shubhpandey.0408@gmail.com
-                </a>
-                <a
-                  href="tel:+919319515024"
-                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
-                >
-                  <span className="text-accent-bright">📞</span> +91 9319515024
-                </a>
-                <a
-                  href="tel:+919997649922"
-                  className="flex items-center gap-2 hover:text-accent-bright transition-colors duration-200"
-                >
-                  <span className="text-accent-bright">📞</span> +91 9997649922
-                </a>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
