@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 
 const stats = [
   {
-    value: "10Ã—",
+    value: "10Ã-",
     label: "Faster document review",
     sub: "vs. manual sample-based review",
     accent: true,

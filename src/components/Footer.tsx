@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Left — brand */}
           <div className="flex flex-col gap-3 max-w-xs">
-            <a href="#" className="flex items-baseline gap-0.5" aria-label="Auditflow home">
-              <span className="font-fraunces text-lg italic text-text-primary">auditflow</span>
+            <a href="#" className="flex items-center gap-2" aria-label="AuditFlow home">
+              <img src="/banner.png" alt="AuditFlow" className="h-8 w-auto object-contain" />
             </a>
             <p className="font-manrope text-xs text-text-muted leading-relaxed">
               Audit intelligence software for internal audit teams, audit firms, and risk leaders.
@@ -44,16 +44,16 @@ export default function Footer() {
             <div className="flex flex-col gap-1 items-start md:items-end">
               <span className="font-mono text-[11px] uppercase tracking-wider text-accent-bright">Direct Contact</span>
               <a
-                href="mailto:contact@auditflow.co.in"
+                href="mailto:contact@AuditFlow.co.in"
                 className="font-manrope text-xs text-text-secondary hover:text-accent-bright transition-colors duration-200"
               >
-                contact@auditflow.co.in
+                contact@AuditFlow.co.in
               </a>
               <a
-                href="mailto:hello@auditflow.co.in"
+                href="mailto:hello@AuditFlow.co.in"
                 className="font-manrope text-xs text-text-secondary hover:text-accent-bright transition-colors duration-200"
               >
-                hello@auditflow.co.in
+                hello@AuditFlow.co.in
               </a>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-manrope text-xs text-text-muted mt-1">
                 <a href="tel:+919319515024" className="hover:text-text-secondary transition-colors">
@@ -62,7 +62,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="font-mono text-[11px] text-text-muted mt-2">
-              © {currentYear} Auditflow. All rights reserved.
+              © {currentYear} AuditFlow. All rights reserved.
             </p>
           </div>
         </div>

@@ -33,10 +33,8 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Wordmark */}
-        <a href="#" className="flex items-baseline gap-0.5 group" aria-label="Auditflow home">
-          <span className="font-fraunces text-xl italic text-text-primary tracking-tight">
-            auditflow
-          </span>
+        <a href="#" className="flex items-center gap-2 group" aria-label="AuditFlow home">
+          <img src="/banner.png" alt="AuditFlow" className="h-8 w-auto object-contain" />
         </a>
 
         {/* Desktop nav */}

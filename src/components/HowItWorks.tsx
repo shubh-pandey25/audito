@@ -14,7 +14,7 @@ const steps = [
         <p className="text-text-muted border-b border-border-subtle/50 pb-2">Financial Risk Scan</p>
         {[
           { label: "Current Ratio", val: "0.82", flag: true },
-          { label: "Debt / Equity", val: "3.4×", flag: true },
+          { label: "Debt / Equity", val: "3.4�-", flag: true },
           { label: "EBITDA Margin", val: "18.2%", flag: false },
           { label: "Revenue Growth", val: "−4.1%", flag: true },
         ].map((row) => (

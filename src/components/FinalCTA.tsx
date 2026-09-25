@@ -63,7 +63,7 @@ export default function FinalCTA() {
             </h2>
 
             <p className="font-manrope text-lg text-text-secondary leading-relaxed">
-              See how Auditflow and the Audito agent fit your team&apos;s existing workflow. We&apos;ll walk you through a
+              See how AuditFlow and the Audito agent fit your team&apos;s existing workflow. We&apos;ll walk you through a
               live example using a realistic audit scenario — no prepared demo script.
             </p>
 
