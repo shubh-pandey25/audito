@@ -75,11 +75,11 @@ export default function Hero() {
               id="hero-heading"
               className="font-fraunces text-5xl lg:text-7xl text-text-primary leading-[1.05] tracking-tight"
             >
-              Internal Audit less
+              Internal Audit -
               <br />
-              paperwork.
+              less paperwork.
               <br />
-              <span className="italic">Uncover</span> more risk.
+              <span className="italic">Uncover</span> more Risk.
             </h1>
 
             {/* Subhead */}
